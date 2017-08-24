@@ -1,16 +1,23 @@
 System.config({
-  transpiler: 'typescript',
+  transpiler: 'ts',
   typescriptOptions: {
-    //tsconfig: true
-    emitDecoratorMetadata: true,
-    jsx: 'react'
+    tsconfig: true
   },
+  // meta: with typescript and exports ts is required to use tsconfig: true
+    meta: {
+      'typescript': {
+        "exports": "ts"
+      }
+    },
   paths: {
     'npm:':'https://unpkg.com/'
     
   },
   map: {
-    'typescript': 'npm:typescript@2.2.2/lib/typescript.js',
+    // ts is required to be able to use tsconfig: true in typescriptOptions
+    'ts':         'npm:plugin-typescript@7.1.0/lib/plugin.js',
+    // typescript is required to compile
+    'typescript': 'npm:typescript@2.4.2/lib/typescript.js',
     'react': 'npm:react@15.3.2/dist/react.min.js',
     'react-dom': 'npm:react-dom@15.3.2/dist/react-dom.min.js',
     
