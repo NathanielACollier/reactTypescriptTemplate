@@ -20,12 +20,12 @@
       // our app is within the app folder
       app: 'app',
 
-      'typescript':     'npm:typescript@2.2.1/lib/typescript.js'
+      'typescript':     'npm:typescript@2.4.2/lib/typescript.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
-        main: './app/app.tsx',
+        main: './app.tsx',
         defaultExtension: 'tsx'
       }
     }

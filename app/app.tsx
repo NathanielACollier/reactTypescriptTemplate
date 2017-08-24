@@ -1,5 +1,7 @@
 'use strict';
 
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
 class ReactApp extends React.Component {
   
@@ -32,5 +34,5 @@ class ReactApp extends React.Component {
 
 ReactDOM.render(
   <ReactApp ref={ component => this.reactComponent = component }/>,
-  document.getElementById('reactHost');
-)
+  document.getElementById('reactHost') as HTMLElement
+);
