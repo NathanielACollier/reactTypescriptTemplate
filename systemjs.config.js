@@ -14,12 +14,12 @@ System.config({
     'react': 'npm:react@15.3.2/dist/react.min.js',
     'react-dom': 'npm:react-dom@15.3.2/dist/react-dom.min.js',
     
-    'app': './src',
+    'app': './src'
   },
   packages: {
     app: {
       main: './main.tsx',
-      defaultExtension: false,
-    },
+      defaultExtension: false
+    }
   }
 });
