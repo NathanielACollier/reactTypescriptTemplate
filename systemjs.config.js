@@ -19,7 +19,8 @@
     map: {
       // our app is within the app folder
       app: 'app',
-
+      'react':          'npm:react@15.4.2',
+      'react-dom':      'npm:react-dom@15.4.2',
       'typescript':     'npm:typescript@2.4.2/lib/typescript.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
