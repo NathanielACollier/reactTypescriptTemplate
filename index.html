@@ -1,0 +1,28 @@
+<script>
+  "use typescript";
+</script>
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <script data-require="react@*" data-semver="15.2.0" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+  <script data-require="react@*" data-semver="15.2.0" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+
+  <script src="https://npmcdn.com/systemjs@0.19.40/dist/system.src.js"></script>
+
+  <script>
+    System.import('systemjs.config.js')
+      .then(function () { System.import('app') })
+      .catch(console.error.bind(console));
+  </script>
+    
+    
+  </head>
+
+  <body>
+    <h1>React Test</h1>
+    <div class="react-host" #reactHost></div>
+  </body>
+
+</html>
