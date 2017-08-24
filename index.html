@@ -1,25 +1,21 @@
-<script>
-  "use typescript";
-</script>
 <!DOCTYPE html>
 <html>
 
   <head>
 
   <script src="https://npmcdn.com/systemjs@0.19.40/dist/system.src.js"></script>
-
-  <script>
+    <script>
     System.import('systemjs.config.js')
       .then(function () { System.import('app') })
       .catch(console.error.bind(console));
-  </script>
-    
-    
+    </script>
   </head>
 
   <body>
-    <h1>React Test</h1>
-    <div class="react-host" #reactHost></div>
+    <div id="app"></div>
+    
+    
+
   </body>
 
 </html>

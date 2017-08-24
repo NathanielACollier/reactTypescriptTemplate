@@ -1,8 +1,8 @@
-'use strict';
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+
+/*
 class ReactApp extends React.Component {
   
   constructor(props) {
@@ -36,3 +36,10 @@ ReactDOM.render(
   <ReactApp ref={ component => this.reactComponent = component }/>,
   document.getElementById('reactHost') as HTMLElement
 );
+*/
+
+ReactDOM.render((
+  <h1>Hello World!</h1>
+), document.querySelector('#app'));
+
+
